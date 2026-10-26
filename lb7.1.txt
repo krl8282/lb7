@@ -15,4 +15,23 @@ int main()
         x += h;
     }
 }
+// Зміни до файлу лр7
 
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    double y, x, h;
+    x = 3;
+    h = 0.1;
+    do
+    {
+        y = pow(x, 1.0 / 2.0) + cos(x) - 3;
+        cout << setw(10) << "x=" << fixed << setprecision(1) << x << setw(10) << "y=" << fixed << setprecision(4) << y << endl;
+        x += h;
+    } 
+    while (x <= 5);
+}
