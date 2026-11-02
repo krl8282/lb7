@@ -18,3 +18,23 @@ int main()
 
 }
 /*файл для першої версії lb9*/
+
+#include<stdio.h>
+#include<windows.h>
+#define _USE_MATH_DEFINES
+#include<math.h>
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    double x, y, z;
+    printf("Введіть x \n");
+    scanf_s("%lf", &x);
+    printf("Введіть y \n");
+    scanf_s("%lf", &y);
+    printf("Введіть z \n");
+    scanf_s("%lf", &z);
+    double b = (((y * pow(x, 2) - z) / ((exp(x * y))-1)) + ((cbrt(5 - pow(y, 3)))) / ((fabs(x - y)) / (sqrt(2 * x))));
+    printf("%lf", b, "\n");
+}
+/*зміни для зміненої видаленої версії файлу lb9*/
