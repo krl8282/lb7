@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<windows.h>
+#define _USE_MATH_DEFINES
+#include<math.h>
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	double x, y, z;
+	printf("Введіть х ");
+	scanf_s("%lf", &x);
+	printf("Введіть y ");
+	scanf_s("%lf", &y);
+	printf("Введіть z ");
+	scanf_s("%lf", &z);
+	double pi = M_PI;
+	printf("%lf",((pow(x, 3)) * pow(tan(pow(x + y, 2)), 2) + z / (sqrt(static_cast<double>(x + y))) - 2 * tan(25 * pi / 180)));
+
+}
+/*файл для першої версії lb9*/
